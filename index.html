@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CrewJournal – the logbook that reads your trips</title>
+<meta name="title-en" content="CrewJournal – the logbook that reads your trips">
+<meta name="title-de" content="CrewJournal – das Logbuch, das deine Rotationen liest">
+<meta name="description" content="Personal flight logbook for airline crews. Add a screenshot or PDF of your trip – CrewJournal reads flights, block times and the whole crew. See who you have flown with and your hours per month and year.">
+<meta name="theme-color" content="#0C0F14">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="CrewJournal">
+<meta property="og:description" content="The logbook for airline crews that reads your trips from a screenshot.">
+<meta property="og:image" content="https://crewjournal.com/assets/og.png">
+<meta property="og:url" content="https://crewjournal.com/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/bc-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js"></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="apple-touch-icon.png" alt="" width="32" height="32">CrewJournal</a>
+    <nav class="nav-links">
+      <a href="#how"><span lang="en">How it works</span><span lang="de">So geht’s</span></a>
+      <a href="#features"><span lang="en">Features</span><span lang="de">Funktionen</span></a>
+      <a href="#privacy"><span lang="en">Privacy</span><span lang="de">Datenschutz</span></a>
+      <a href="#support">Support</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-l="en" aria-pressed="true">EN</button>
+      <button type="button" data-l="de" aria-pressed="false">DE</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="arc" aria-hidden="true">
+    <svg viewBox="0 0 1200 300" fill="none">
+      <path d="M40 260 C 300 40, 860 20, 1120 120" stroke="#F2B13C" stroke-opacity=".35" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="0 14"/>
+      <circle cx="1120" cy="120" r="7" fill="#F2B13C"/>
+      <circle cx="1120" cy="120" r="17" stroke="#F2B13C" stroke-opacity=".4" stroke-width="2"/>
+    </svg>
+  </div>
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow"><span lang="en">Flight logbook for airline crews</span><span lang="de">Flugbuch für Airline-Crews</span></p>
+      <h1><span lang="en">Your logbook<br><em>writes itself.</em></span><span lang="de">Dein Logbuch<br><em>schreibt sich selbst.</em></span></h1>
+      <p class="lead">
+        <span lang="en">Add a screenshot or the PDF of your trip. CrewJournal reads every flight, block time and the whole crew list – and keeps it for you, for good.</span>
+        <span lang="de">Screenshot oder PDF deiner Rotation hinzufügen. CrewJournal liest jeden Flug, jede Blockzeit und die ganze Crewliste – und bewahrt alles für dich auf.</span>
+      </p>
+      <div class="cta">
+        <span class="badge">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.6-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 3-.4 7.4 1.2 9.8.8 1.2 1.8 2.5 3 2.4 1.2 0 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.1-1.2 2.9-2.4.9-1.4 1.3-2.7 1.3-2.8-.1 0-2.5-1-2.5-4zM14 5.5c.7-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.2 1.8-1 2.9 1 .1 2.1-.6 2.8-1.4z"/></svg>
+          <span lang="en">Coming soon to the App Store</span><span lang="de">Bald im App Store</span>
+        </span>
+        <span class="note"><span lang="en">iPhone and iPad</span><span lang="de">iPhone und iPad</span></span>
+      </div>
+    </div>
+
+    <div class="phone reveal" role="img" aria-label="CrewJournal overview screen">
+      <div class="screen">
+        <div class="island"></div>
+        <div class="s-head"><b><span lang="en">Overview</span><span lang="de">Übersicht</span></b><span class="s-plus">＋</span></div>
+        <div class="s-body">
+          <div class="chips"><span class="chip"><span lang="en">Month</span><span lang="de">Monat</span></span><span class="chip on">2026</span><span class="chip"><span lang="en">All</span><span lang="de">Alle</span></span></div>
+          <div class="kpis">
+            <div class="card"><div class="k-label"><span lang="en">Block time</span><span lang="de">Blockzeit</span></div><div class="k-val amber">684:20</div></div>
+            <div class="card"><div class="k-label"><span lang="en">Flights</span><span lang="de">Flüge</span></div><div class="k-val">68</div></div>
+          </div>
+          <div class="card">
+            <div class="k-label"><span lang="en">Block hours per month</span><span lang="de">Blockstunden pro Monat</span></div>
+            <div class="bars"><i style="height:62%"></i><i style="height:74%"></i><i style="height:55%"></i><i style="height:81%"></i><i style="height:69%"></i><i style="height:92%"></i><i style="height:77%"></i><i style="height:64%"></i><i style="height:86%"></i><i style="height:71%"></i><i class="dim" style="height:30%"></i><i class="dim" style="height:12%"></i></div>
+            <div class="months"><span>J</span><span>F</span><span>M</span><span>A</span><span>M</span><span>J</span><span>J</span><span>A</span><span>S</span><span>O</span><span>N</span><span>D</span></div>
+          </div>
+          <div class="card rows">
+            <div class="k-label" style="margin-bottom:4px"><span lang="en">Most frequent crew</span><span lang="de">Häufigste Crew</span></div>
+            <div class="r"><b>Sara Brunner</b><span>9</span></div>
+            <div class="r"><b>Luc Dubois</b><span>7</span></div>
+            <div class="r"><b>Marco Rossi</b><span>6</span></div>
+          </div>
+          <div class="card rows">
+            <div class="k-label" style="margin-bottom:4px">Facts &amp; Figures</div>
+            <div class="r"><span><span lang="en">Top layover</span><span lang="de">Häufigstes Layover</span></span><b class="mono">HKG</b></div>
+            <div class="r"><span><span lang="en">Longest flight</span><span lang="de">Längster Flug</span></span><b class="mono">13:05</b></div>
+          </div>
+        </div>
+        <div class="tabbar">
+          <span class="on"><em>▥</em><span lang="en">Overview</span><span lang="de">Übersicht</span></span>
+          <span><em>✈︎</em><span lang="en">Trips</span><span lang="de">Rotationen</span></span>
+          <span><em>☺︎</em>Crew</span>
+          <span><em>◎</em><span lang="en">Profile</span><span lang="de">Profil</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <p class="eyebrow"><span lang="en">How it works</span><span lang="de">So geht’s</span></p>
+    <h2><span lang="en">Screenshot in.<br>Logbook out.</span><span lang="de">Screenshot rein.<br>Logbuch raus.</span></h2>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="n">1</div>
+        <h3><span lang="en">Add your trip</span><span lang="de">Rotation hinzufügen</span></h3>
+        <p><span lang="en">A screenshot or PDF of the trip page from your crew portal. Several screenshots of the same trip are merged automatically.</span><span lang="de">Ein Screenshot oder PDF der Rotation aus deinem Crew-Portal. Mehrere Screenshots derselben Rotation werden automatisch zusammengeführt.</span></p>
+      </div>
+      <div class="step reveal">
+        <div class="n">2</div>
+        <h3><span lang="en">Check it</span><span lang="de">Kurz prüfen</span></h3>
+        <p><span lang="en">Flights, block times and crew appear in a clear form. Anything missing or wrong is fixed with a tap.</span><span lang="de">Flüge, Blockzeiten und Crew erscheinen übersichtlich. Fehlt etwas oder stimmt etwas nicht, korrigierst du es mit einem Tipp.</span></p>
+      </div>
+      <div class="step reveal">
+        <div class="n">3</div>
+        <h3><span lang="en">Done</span><span lang="de">Fertig</span></h3>
+        <p><span lang="en">The trip is in your logbook. Standby and ground duties are left out, deadheads are marked as such.</span><span lang="de">Die Rotation ist in deinem Logbuch. Standby und Bodendienste werden weggelassen, Deadheads als solche markiert.</span></p>
+      </div>
+    </div>
+
+    <div class="scan reveal" aria-hidden="true">
+      <div class="doc">
+        <div class="t">Trip Information</div>
+        <div class="row">29Aug26 <span class="hl">LX138</span> ZRH–HKG 22:49 16:13 <span class="hl">11:24</span></div>
+        <div class="row">01Sep26 <span class="hl">LX139</span> HKG–ZRH 23:35 06:40 <span class="hl">13:05</span></div>
+        <div class="row" style="margin-top:8px">** BRUNNER Sara (BRSA) 10234 CMD</div>
+        <div class="row">** DUBOIS Luc (DULU) 11872 F/O</div>
+        <div class="row">&nbsp;&nbsp; ROSSI Marco (ROMA) 20511 PUR</div>
+        <div class="row" style="color:#999">&nbsp;&nbsp; …</div>
+      </div>
+      <div class="to"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></div>
+      <div class="out">
+        <div class="leg"><span class="f">LX138</span><span>ZRH → HKG</span><span class="b">11:24</span></div>
+        <div class="leg"><span class="f">LX139</span><span>HKG → ZRH</span><span class="b">13:05</span></div>
+        <div class="crew"><span>Sara Brunner · CMD</span><span>Luc Dubois · F/O</span><span>Marco Rossi · PUR</span><span>+14</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow"><span lang="en">Features</span><span lang="de">Funktionen</span></p>
+    <h2><span lang="en">Everything you flew.<br>Everyone you flew with.</span><span lang="de">Alles, was du geflogen bist.<br>Alle, mit denen du geflogen bist.</span></h2>
+    <div class="features">
+      <div class="feature reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"/><circle cx="18" cy="9" r="2.5"/><path d="M17 14.6c2.3.3 3.9 1.9 4.5 4.4"/></svg></div>
+        <h3><span lang="en">Flown together before?</span><span lang="de">Schon mal zusammen geflogen?</span></h3>
+        <p><span lang="en">Search by name, crew code or staff number and see every flight you shared – before you even get to the briefing.</span><span lang="de">Suche nach Name, Crew-Code oder Personalnummer und sieh alle gemeinsamen Flüge – noch vor dem Briefing.</span></p>
+      </div>
+      <div class="feature reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
+        <h3><span lang="en">Hours at a glance</span><span lang="de">Stunden auf einen Blick</span></h3>
+        <p><span lang="en">Block time per month, per year or for any period you choose. Flights and deadheads counted for you.</span><span lang="de">Blockzeit pro Monat, Jahr oder frei gewähltem Zeitraum. Flüge und Deadheads werden für dich gezählt.</span></p>
+      </div>
+      <div class="feature reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3z"/></svg></div>
+        <h3><span lang="en">Every destination</span><span lang="de">Alle Destinationen</span></h3>
+        <p><span lang="en">All the places you have flown to, your most frequent layover, your longest and your shortest flight.</span><span lang="de">Alle Orte, die du angeflogen hast, dein häufigstes Layover, dein längster und dein kürzester Flug.</span></p>
+      </div>
+      <div class="feature reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+        <h3><span lang="en">Any crew portal</span><span lang="de">Jedes Crew-Portal</span></h3>
+        <p><span lang="en">Built to read trip and pairing pages in any airline’s layout – screenshots or PDFs, on iPhone or iPad.</span><span lang="de">Gebaut für Rotations- und Pairing-Seiten im Layout jeder Airline – als Screenshot oder PDF, auf iPhone oder iPad.</span></p>
+      </div>
+      <div class="feature reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3><span lang="en">Smart manual entry</span><span lang="de">Schlaue Handeingabe</span></h3>
+        <p><span lang="en">Type a flight number and the route, aircraft and block time fill in – local times and time zones are handled for you.</span><span lang="de">Flugnummer eintippen, Strecke, Flugzeug und Blockzeit füllen sich aus – Ortszeiten und Zeitzonen rechnet die App selbst.</span></p>
+      </div>
+      <div class="feature reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+        <h3><span lang="en">Yours alone</span><span lang="de">Nur für dich</span></h3>
+        <p><span lang="en">Your logbook is private. Nothing is shared with colleagues or your airline. No ads, no tracking.</span><span lang="de">Dein Logbuch ist privat. Nichts wird mit Kollegen oder deiner Airline geteilt. Keine Werbung, kein Tracking.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="privacy" class="privacy">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow"><span lang="en">Privacy</span><span lang="de">Datenschutz</span></p>
+      <h2><span lang="en">Your logbook<br>is yours.</span><span lang="de">Dein Logbuch<br>gehört dir.</span></h2>
+      <p class="lead"><span lang="en">CrewJournal is made by a pilot for crews. It keeps what you add and nothing more.</span><span lang="de">CrewJournal ist von einem Piloten für Crews gemacht. Es speichert, was du hinzufügst – und sonst nichts.</span></p>
+    </div>
+    <ul class="checks">
+      <li><span><span lang="en">Visible only to you</span><span lang="de">Nur für dich sichtbar</span><small><span lang="en">Your trips and crew lists are never shared with other users or your airline.</span><span lang="de">Deine Rotationen und Crewlisten werden nie mit anderen Nutzern oder deiner Airline geteilt.</span></small></span></li>
+      <li><span><span lang="en">Stored in the EU</span><span lang="de">Gespeichert in der EU</span><small><span lang="en">Your logbook lives on servers in Ireland.</span><span lang="de">Dein Logbuch liegt auf Servern in Irland.</span></small></span></li>
+      <li><span><span lang="en">Screenshots are not kept</span><span lang="de">Screenshots werden nicht aufbewahrt</span><small><span lang="en">They are read once to fill in your trip, then discarded.</span><span lang="de">Sie werden einmal gelesen, um deine Rotation auszufüllen, und danach verworfen.</span></small></span></li>
+      <li><span><span lang="en">No ads, no tracking, no analytics</span><span lang="de">Keine Werbung, kein Tracking, keine Analyse</span><small><span lang="en">Not in the app, not on this website.</span><span lang="de">Weder in der App noch auf dieser Website.</span></small></span></li>
+      <li><span><span lang="en">Delete everything, any time</span><span lang="de">Alles löschen, jederzeit</span><small><span lang="en">Profile › Delete account removes your account and all your data at once.</span><span lang="de">Profil › Konto löschen entfernt dein Konto und alle deine Daten auf einmal.</span></small></span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="support">
+  <div class="wrap">
+    <p class="eyebrow">Support</p>
+    <h2><span lang="en">Questions</span><span lang="de">Fragen</span></h2>
+    <div class="faq">
+      <details>
+        <summary><span lang="en">Which airlines does it work with?</span><span lang="de">Mit welchen Airlines funktioniert es?</span></summary>
+        <p><span lang="en">CrewJournal reads trip, pairing and rotation pages that show flights with times – in any layout. It works best when the page also lists the crew. If something is not read correctly, send us the (anonymised) screenshot and we will improve it.</span><span lang="de">CrewJournal liest Rotations- und Pairing-Seiten, die Flüge mit Zeiten zeigen – in jedem Layout. Am besten funktioniert es, wenn die Seite auch die Crew auflistet. Wird etwas nicht richtig gelesen, schick uns den (anonymisierten) Screenshot, dann verbessern wir das.</span></p>
+      </details>
+      <details>
+        <summary><span lang="en">What happens to my screenshots?</span><span lang="de">Was passiert mit meinen Screenshots?</span></summary>
+        <p><span lang="en">They are sent encrypted to our reading service, which uses Claude by Anthropic to recognise flights and crew. Only the result is saved in your logbook; the screenshots themselves are not stored by CrewJournal, and Anthropic does not use them to train its models. Details are in the <a href="privacy.html">privacy policy</a>.</span><span lang="de">Sie werden verschlüsselt an unseren Lesedienst geschickt, der mit Claude von Anthropic Flüge und Crew erkennt. Nur das Ergebnis wird in deinem Logbuch gespeichert; die Screenshots selbst speichert CrewJournal nicht, und Anthropic verwendet sie nicht zum Trainieren seiner Modelle. Details stehen in der <a href="privacy.html">Datenschutzerklärung</a>.</span></p>
+      </details>
+      <details>
+        <summary><span lang="en">The crew list on my screenshot is cut off.</span><span lang="de">Die Crewliste auf meinem Screenshot ist abgeschnitten.</span></summary>
+        <p><span lang="en">Usually one screenshot is enough: if the return flight has the same crew, CrewJournal fills it in. If the crew changes during the trip, add more screenshots so that all names are visible – they are merged into one trip.</span><span lang="de">Meist reicht ein Screenshot: Fliegt auf dem Rückflug dieselbe Crew, füllt CrewJournal sie selbst aus. Wechselt die Crew während der Rotation, füge weitere Screenshots hinzu, damit alle Namen sichtbar sind – sie werden zu einer Rotation zusammengeführt.</span></p>
+      </details>
+      <details>
+        <summary><span lang="en">Is standby recorded?</span><span lang="de">Wird Standby erfasst?</span></summary>
+        <p><span lang="en">No. Standby, reserve and ground duties are ignored. Flights you travel on as a passenger are logged as deadheads.</span><span lang="de">Nein. Standby, Reserve und Bodendienste werden ignoriert. Flüge, auf denen du als Passagier reist, werden als Deadhead erfasst.</span></p>
+      </details>
+      <details>
+        <summary><span lang="en">Can I add trips by hand?</span><span lang="de">Kann ich Rotationen von Hand eingeben?</span></summary>
+        <p><span lang="en">Yes. Tap ＋ and choose manual entry. Crew members you have flown with before are suggested as you type.</span><span lang="de">Ja. Tippe auf ＋ und wähle „Manuell erfassen“. Crewmitglieder, mit denen du schon geflogen bist, werden beim Tippen vorgeschlagen.</span></p>
+      </details>
+      <details>
+        <summary><span lang="en">How do I delete my data?</span><span lang="de">Wie lösche ich meine Daten?</span></summary>
+        <p><span lang="en">In the app: Profile › Delete account. Your account, profile and all trips are deleted immediately. You can also write to us and we will do it for you.</span><span lang="de">In der App: Profil › Konto löschen. Konto, Profil und alle Rotationen werden sofort gelöscht. Du kannst uns auch schreiben, dann erledigen wir das für dich.</span></p>
+      </details>
+    </div>
+
+    <div class="contact reveal">
+      <div>
+        <h3><span lang="en">Something else?</span><span lang="de">Noch etwas?</span></h3>
+        <p><span lang="en">Feedback, ideas or a trip that wasn’t read correctly – write to us.</span><span lang="de">Feedback, Ideen oder eine Rotation, die nicht richtig gelesen wurde – schreib uns.</span></p>
+      </div>
+      <a class="mail" href="mailto:hello@crewjournal.com">hello@crewjournal.com</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 CrewJournal</span>
+    <nav>
+      <a href="privacy.html"><span lang="en">Privacy policy</span><span lang="de">Datenschutzerklärung</span></a>
+      <a href="privacy.html#contact"><span lang="en">Legal notice</span><span lang="de">Impressum</span></a>
+      <a href="mailto:hello@crewjournal.com"><span lang="en">Contact</span><span lang="de">Kontakt</span></a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
