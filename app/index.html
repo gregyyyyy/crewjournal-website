@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>CrewJournal</title>
+<script>
+// Short link for QR codes (business cards, flyers): sends each device to the right store.
+// While the app is not in a store yet, the link for that store stays empty and the visitor lands on the website.
+(function () {
+  var APP_STORE = '';     // once live: 'https://apps.apple.com/app/id6827171140'
+  var PLAY_STORE = '';    // once live: 'https://play.google.com/store/apps/details?id=com.crewjournal.app'
+  var SITE = 'https://crewjournal.com/';
+  var ua = navigator.userAgent || '';
+  var ios = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  var android = /Android/i.test(ua);
+  location.replace((ios && APP_STORE) || (android && PLAY_STORE) || SITE);
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://crewjournal.com/"></noscript>
+</head>
+<body style="margin:0;background:#0C0F14;color:#F1ECE2;font:17px -apple-system,system-ui,sans-serif;display:grid;place-items:center;min-height:100vh">
+<p><a href="https://crewjournal.com/" style="color:#F2B13C">CrewJournal</a></p>
+</body>
+</html>
