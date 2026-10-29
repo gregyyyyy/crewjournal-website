@@ -87,7 +87,7 @@ section { padding: 120px 0; }
 .rows .r { display: flex; justify-content: space-between; padding: 5px 0; border-top: 1px solid var(--line); color: var(--ink2); }
 .rows .r:first-of-type { border-top: 0; }
 .rows .r b { color: var(--ink); font-weight: 600; }
-.rmk { display: inline-block; background: var(--accent); color: var(--accent-ink); font: 800 .72em/1 var(--body); font-style: normal; letter-spacing: .06em; padding: 3px 5px 2px; border-radius: 4px; vertical-align: .12em; margin-left: 4px; }
+.rmk { display: inline-block; background: var(--accent); color: var(--accent-ink); font: 800 .72em/1 var(--body); font-style: normal; letter-spacing: .06em; padding: 3px 5px 2px; border-radius: 4px; vertical-align: .12em; }
 .mono { font-family: var(--mono); font-size: .95em; }
 .tabbar { display: flex; justify-content: space-around; border-top: 1px solid var(--line); background: var(--surface); padding: 8px 6px 20px; color: var(--muted); font-size: 9.5px; font-weight: 700; }
 .tabbar span { display: grid; justify-items: center; gap: 2px; }
