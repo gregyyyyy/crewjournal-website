@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>CrewJournal</title>
+<script>
+// Business-card QR code: iPhones open the App Store offer "3 months CrewJournal Pro free" (offer code CREWCARD,
+// new subscribers only, 500 redemptions, valid until 9 May 2027). Not linked anywhere on the website.
+// To change or end the offer, only change OFFER here; the printed cards keep working.
+(function () {
+  var OFFER = 'https://apps.apple.com/redeem?ctx=offercodes&id=6827171140&code=CREWCARD';
+  var APP_STORE = OFFER || 'https://apps.apple.com/app/id6827171140';
+  var PLAY_STORE = '';    // once live: 'https://play.google.com/store/apps/details?id=com.crewjournal.app'
+  var SITE = 'https://crewjournal.com/';
+  var ua = navigator.userAgent || '';
+  var ios = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  var android = /Android/i.test(ua);
+  location.replace((ios && APP_STORE) || (android && PLAY_STORE) || SITE);
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://crewjournal.com/"></noscript>
+</head>
+<body style="margin:0;background:#0C0F14;color:#F1ECE2;font:17px -apple-system,system-ui,sans-serif;display:grid;place-items:center;min-height:100vh">
+<p><a href="https://crewjournal.com/" style="color:#F2B13C">CrewJournal</a></p>
+</body>
+</html>
