@@ -12,7 +12,8 @@
 (function () {
   var OFFER = 'https://apps.apple.com/redeem?ctx=offercodes&id=6827171140&code=CREWCARD';
   var APP_STORE = OFFER || 'https://apps.apple.com/app/id6827171140';
-  var PLAY_STORE = '';    // once live: 'https://play.google.com/store/apps/details?id=com.crewjournal.app'
+  // TODO at the Android launch: Google Play promo code "3 months Pro free" for subscriptions, redeem link here
+  var PLAY_STORE = '';    // e.g. 'https://play.google.com/redeem?code=…'
   var SITE = 'https://crewjournal.com/';
   var ua = navigator.userAgent || '';
   var ios = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
