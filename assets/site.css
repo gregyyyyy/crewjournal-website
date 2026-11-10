@@ -157,9 +157,11 @@ footer { border-top: 1px solid var(--line); padding: 36px 0 48px; color: var(--m
 footer .wrap { display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; }
 footer nav { display: flex; gap: 22px; margin-left: auto; }
 footer a { color: var(--ink2); }
-footer .family { flex-basis: 100%; margin: 0; font-size: 13.5px; }
-footer .family a { color: var(--ink); font-weight: 600; }
+footer .family a { color: var(--ink); font-family: var(--display); font-weight: 700; font-size: 15px; letter-spacing: .02em; }
 footer .family b { font-weight: 700; }
+footer .family b.cl { color: #5B8CFF; }
+footer .family b.cd { color: #A596FF; }
+.legal .faq { margin-top: 28px; }
 
 /* ---------- Legal page ---------- */
 .legal { padding: 64px 0 100px; }

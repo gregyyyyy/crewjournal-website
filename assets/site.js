@@ -1,5 +1,7 @@
 // Language: German for German-language browsers, English for everyone else. The choice is remembered.
 (function () {
+  // The questions moved from crewjournal.com/#support to their own page
+  if (location.hash === '#support') { location.replace('faq.html'); return; }
   var root = document.documentElement;
   var saved = null;
   try { saved = localStorage.getItem('cj-lang'); } catch (e) { /* storage blocked */ }
