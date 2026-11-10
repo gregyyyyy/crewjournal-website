@@ -23,13 +23,48 @@
         flex: 1;
       }
     </style>
-  <link rel="icon" href="/app-preview/favicon.ico"/></head>
+  <link rel="icon" href="/app-preview/favicon.ico"/><!-- phone-frame --><style id="phone-frame">
+#phone,#screen{display:contents}#sb,#island,#home{display:none}
+@media (min-width:700px) and (min-height:620px) and (pointer:fine) and (display-mode:browser){
+html.framed body{margin:0;display:grid;place-items:center;background:radial-gradient(circle at 50% 30%,#2b2f3a,#0b0c10 70%);overflow:hidden}
+html.framed #phone{display:block;box-sizing:border-box;height:min(880px,calc(100vh - 40px));aspect-ratio:421/880;padding:14px;border-radius:68px;
+  background:#1b1c1f;box-shadow:0 0 0 2px #45464b,0 0 0 5px #131417,0 40px 90px rgba(0,0,0,.55)}
+html.framed #screen{position:relative;display:flex;flex-direction:column;width:100%;height:100%;border-radius:54px;overflow:hidden;
+  transform:translateZ(0);background:var(--app-bg,#000);color:var(--sb-ink,#fff)}
+html.framed #sb{display:flex;flex:none;height:54px;box-sizing:border-box;padding:6px 30px 0 44px;align-items:center;justify-content:space-between;
+  font:600 16px/1 -apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif;letter-spacing:-.2px}
+html.framed #sb svg{display:block}html.framed #sbi{display:flex;gap:6px;align-items:center}
+html.framed #island{display:block;position:absolute;z-index:99999;top:11px;left:50%;width:31%;height:34px;transform:translateX(-50%);border-radius:20px;background:#000}
+html.framed #root{flex:1;min-height:0;height:auto}
+html.framed #home{display:block;flex:none;height:30px;position:relative;background:var(--app-bg2,transparent);color:var(--home-ink,#fff)}
+html.framed #home::after{content:"";position:absolute;left:50%;bottom:9px;width:36%;height:5px;transform:translateX(-50%);border-radius:3px;background:currentColor;opacity:.9}
+}
+</style></head>
 
   <body>
     <!-- Use static rendering with Expo Router to support running without JavaScript. -->
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <!-- The root element for your Expo app. -->
-    <div id="root"></div>
+    <div id="phone"><div id="screen"><div id="sb" aria-hidden="true"><span>9:41</span><span id="sbi"><svg width="18" height="12" viewBox="0 0 18 12" fill="currentColor"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg width="16" height="12" viewBox="0 0 16 12" fill="currentColor"><path d="M8 2.6c2.3 0 4.4.9 6 2.4l1.2-1.3A10.4 10.4 0 0 0 8 .8C5.2.8 2.7 1.9.8 3.7L2 5C3.6 3.5 5.7 2.6 8 2.6Zm0 3.6c1.3 0 2.5.5 3.4 1.3l1.2-1.3A6.7 6.7 0 0 0 8 4.4c-1.8 0-3.4.7-4.6 1.8l1.2 1.3c.9-.8 2.1-1.3 3.4-1.3Zm0 3.5c-.5 0-1 .2-1.4.5L8 11.7l1.4-1.5c-.4-.3-.9-.5-1.4-.5Z"/></svg><svg width="27" height="13" viewBox="0 0 27 13" fill="none"><rect x=".5" y=".5" width="22" height="12" rx="3.5" stroke="currentColor" opacity=".4"/><rect x="2" y="2" width="19" height="9" rx="2" fill="currentColor"/><path d="M24.5 4.5v4c.8-.3 1.4-1.1 1.4-2s-.6-1.7-1.4-2Z" fill="currentColor" opacity=".5"/></svg></span></div><div id="island"></div><div id="root"></div><div id="home"></div></div></div>
   <script src="/app-preview/_expo/static/js/web/__expo-metro-runtime-8c088df87a31e4e6accd81c554ec290d.js" defer></script><script src="/app-preview/_expo/static/js/web/__common-1c11c3ecc89e1087b2d8db541d0b9563.js" defer></script><script src="/app-preview/_expo/static/js/web/entry-f50e60ab5e9862b4fc420d320dbd0a5b.js" defer></script>
-</body>
+<script id="phone-frame-js">(function(){
+var mq=matchMedia('(min-width:700px) and (min-height:620px) and (pointer:fine) and (display-mode:browser)');
+if(!mq.matches)return;document.documentElement.classList.add('framed');
+var screen=document.getElementById('screen'),root=document.getElementById('root'),home=document.getElementById('home');
+// Pop-ups are added to <body>: move them into the phone screen (the transform makes "fixed" relative to it)
+new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){
+  if(n.nodeType===1&&n.id!=='phone'&&n.tagName!=='SCRIPT'&&n.tagName!=='STYLE'&&n.tagName!=='NOSCRIPT')screen.insertBefore(n,home);});});})
+  .observe(document.body,{childList:true});
+// Status bar and the area around the app take the colour of the app's background at the top
+function bg(el){while(el&&el!==document.documentElement){var c=getComputedStyle(el).backgroundColor;
+  if(c&&c!=='transparent'&&!/rgba\(.*,\s*0\)$/.test(c))return c;el=el.parentElement;}return null;}
+function tick(){var r=root.getBoundingClientRect();if(!r.width)return;
+  var c=bg(document.elementFromPoint(r.left+r.width/2,r.top+3));if(!c)return;
+  var v=c.match(/\d+(\.\d+)?/g).map(Number),l=(.299*v[0]+.587*v[1]+.114*v[2])/255;
+  screen.style.setProperty('--app-bg',c);screen.style.setProperty('--sb-ink',l>.6?'#000':'#fff');
+  var d=bg(document.elementFromPoint(r.left+2,r.bottom-2));if(!d)return;
+  var w=d.match(/\d+(\.\d+)?/g).map(Number),k=(.299*w[0]+.587*w[1]+.114*w[2])/255;
+  screen.style.setProperty('--app-bg2',d);screen.style.setProperty('--home-ink',k>.6?'#000':'#fff');}
+setInterval(tick,400);
+})();</script></body>
 </html>
