@@ -27,7 +27,6 @@ ul{list-style:none;padding:0;margin:26px auto 0;max-width:340px;text-align:left;
 li{display:flex;gap:12px;align-items:flex-start;font-size:15.5px;line-height:1.4}
 li b{flex:none;width:22px;height:22px;border-radius:50%;background:var(--accent);color:var(--bg);font-size:13px;display:grid;place-items:center;margin-top:1px}
 .btn{display:block;width:100%;max-width:340px;margin:32px auto 0;padding:17px 20px;border-radius:16px;background:var(--accent);color:#1A1406;font-size:17px;font-weight:700;text-decoration:none}
-.small{margin:16px auto 0;max-width:340px;font-size:12.5px;line-height:1.45;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -38,7 +37,6 @@ li b{flex:none;width:22px;height:22px;border-radius:50%;background:var(--accent)
   <p class="lead" id="lead"></p>
   <ul id="list"></ul>
   <a class="btn" id="go" href="https://crewjournal.com/"></a>
-  <p class="small" id="note"></p>
 </main>
 <script>
 (function () {
@@ -57,11 +55,11 @@ li b{flex:none;width:22px;height:22px;border-radius:50%;background:var(--accent)
   document.getElementById('lead').textContent = t.lead;
   document.getElementById('list').innerHTML = t.b.map(function (x) { return '<li><b>✓</b><span></span></li>'; }).join('');
   [].forEach.call(document.querySelectorAll('#list span'), function (s, i) { s.textContent = t.b[i]; });
-  var go = document.getElementById('go'), note = document.getElementById('note');
-  go.textContent = t.cta; note.textContent = t.note;
+  var go = document.getElementById('go');
+  go.textContent = t.cta;
   if (android) {
     go.href = PLAY_STORE || SITE;
-    if (!PLAY_STORE) { go.textContent = de ? 'Zur Website' : 'Visit the website'; note.textContent = de ? 'CrewJournal kommt bald auf Google Play.' : 'CrewJournal is coming to Google Play soon.'; }
+    if (!PLAY_STORE) { go.textContent = de ? 'Zur Website' : 'Visit the website'; }
   } else {
     go.href = OFFER || APP_STORE;
   }
